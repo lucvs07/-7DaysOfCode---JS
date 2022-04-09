@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Links da fonte usada : "League Spartan"-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript" src="/js/script.js"></script>
+<body> 
+    <section>
+        <h1>Linguagem de Programação</h1>
+        <div class="container">
+            <div class="flex_label">
+                <div class="box_label">
+                    <span>Qual seu nome ?</span>
+                    <input type="text" name="nome" id="nome" class="label" placeholder="seu nome">
+                </div>
+                <div class="box_label">
+                    <span>Qual a sua idade ?</span>
+                    <input type="text" name="idade" id="idade" class="label" placeholder="sua idade">
+                </div>
+                <div class="box_label">
+                    <span>Qual linguagem você está aprendendo?</span>
+                    <input type="text" name="linguagem" id="linguegem" class="label" placeholder="linguagem">
+                </div>
+            </div>
+            <button type="submit" class="btn" id="enviar">Enviar</button>    
+            <div class="mensagem" id="mensagem"></div>
+        </div>
+    </section>
+</body>
+</html>

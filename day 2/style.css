@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F2294E;
+    font-family: 'League Spartan', sans-serif;
+}
+:root{
+    --main-color:#F2F2F2;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+h1{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 4rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.box_label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.box_label > span{
+    color: var(--main-color);
+    font-size: 2rem;
+    margin: 1rem 0px;
+}
+::placeholder{
+    padding-left: 1rem;
+}
+.box_label > input{
+    background: rgba(242, 242, 242, 0.8);
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgba(242, 242, 242, 0.8);
+    padding: 1rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 14px 55px;
+    background: #F2295F;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 4rem;
+    
+}
+
