@@ -1,8 +1,8 @@
 
     function mostrarMensagem(){
-        const userNome = document.getElementById('nome').string;
-        const userIdade = document.getElementById('idade').string;
-        const userLinguagem = document.getElementById('linguagem').string;
+        const userNome = document.getElementById('nome');
+        const userIdade = document.getElementById('idade');
+        const userLinguagem = document.getElementById('linguagem');
         const msgContainer = document.getElementById('mensagem');
         const btnEnviar = document.getElementById('enviar');
 
