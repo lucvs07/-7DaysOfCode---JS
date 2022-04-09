@@ -14,15 +14,16 @@
 </head>
 <script>
     function mostrarMensagem(){
-    const userNome = document.getElementById('nome').value;
-    const userIdade = document.getElementById('idade').value;
-    const userLinguagem = document.getElementById('linguagem'.value);
-    const msgContainer = document.getElementById('mensagem');
+        const userNome = document.getElementById('nome').value;
+        const userIdade = document.getElementById('idade').value;
+        const userLinguagem = document.getElementById('linguagem').value;
+        const msgContainer = document.getElementById('mensagem');
+
+        console.log(userNome)
+
+        msgContainer.innerHTML = `Olá ${userNome}, você tem ${userIdade} anos e já está aprendendo ${userLinguagem} ! ` 
+    }
     const btnEnviar = document.getElementById('enviar');
-    
-    msgContainer.innerHTML = `Olá ${userNome}, você tem ${userIdade} anos e já está aprendendo ${userLinguagem} ! ` 
-    btnEnviar.addEventListener("click", mostrarMensagem);
-}
 </script>
 <body> 
     <section>
@@ -39,10 +40,10 @@
                 </div>
                 <div class="box_label">
                     <span>Qual linguagem você está aprendendo?</span>
-                    <input type="text" name="linguagem" id="linguegem" class="label" placeholder="linguagem">
+                    <input type="text" name="linguagem" id="linguagem" class="label" placeholder="linguagem">
                 </div>
             </div>
-            <button type="submit" class="btn" id="enviar" onclick="mostrarMensagem">Enviar</button>    
+            <button type="submit" class="btn" id="enviar" onclick="mostrarMensagem()">Enviar</button>    
             <div class="mensagem" id="mensagem"></div>
         </div>
     </section>
