@@ -12,7 +12,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<script type="text/javascript" src="/js/script.js"></script>
+<script>
+    function mostrarMensagem(){
+    const userNome = document.getElementById('nome').value;
+    const userIdade = document.getElementById('idade').value;
+    const userLinguagem = document.getElementById('linguagem'.value);
+    const msgContainer = document.getElementById('mensagem');
+    const btnEnviar = document.getElementById('enviar');
+    
+    msgContainer.innerHTML = `Olá ${userNome}, você tem ${userIdade} anos e já está aprendendo ${userLinguagem} ! ` 
+    btnEnviar.addEventListener("click", mostrarMensagem);
+}
+</script>
 <body> 
     <section>
         <h1>Linguagem de Programação</h1>
@@ -31,9 +42,10 @@
                     <input type="text" name="linguagem" id="linguegem" class="label" placeholder="linguagem">
                 </div>
             </div>
-            <button type="submit" class="btn" id="enviar">Enviar</button>    
+            <button type="submit" class="btn" id="enviar" onclick="mostrarMensagem">Enviar</button>    
             <div class="mensagem" id="mensagem"></div>
         </div>
     </section>
+    
 </body>
 </html>
