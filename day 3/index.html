@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreiras</title>
+</head>
+<script>
+    var area = prompt("Você quer seguir para área de Front-End ou Back-End")
+    alert("Legal que você quer seguir a área de " + area)
+    var lg_front , lg_back
+    if(area === 'Front-End'){
+        lg_front = prompt("Você quer aprender React ou Vue ?")
+        alert("Interessante que você queira aprender a linguagem " + lg_front)
+    }
+    else{
+        lg_back = prompt("Você quer aprender C# ou Java ?")
+        alert("Interessante que você queira aprender a linguagem " + lg_back )
+    }
+    var area2 = prompt("Você quer seguir estudando a área " + area + " , ou quer seguir se desenvolvendo para se tornar Fullstack ?")
+    alert ("Boa sorte na sua caminhada de desenvolvimento na área " + area2)
+    
+    let i = 1;
+    while (i > 0){
+        linguagens = prompt("Tem mais alguma linguagem que você gostaria de aprender ?")
+        if(linguagens === 'não'){
+            i = 0
+        }
+        else{
+            alert("Legal que você queira aprender a linguagem " + linguagens)
+            i = i++
+        }
+        
+    }
+
+</script>
+<body>
+    
+</body>
+</html>
